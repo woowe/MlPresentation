@@ -1,0 +1,5 @@
+<svg *ngFor="let text_path of text_paths; let i = index"
+     [attr.width]="text_path.width" [attr.height]="text_path.height"
+     [attr.viewBox]=" '0 0 ' + text_path.width + ' ' + text_path.height" >
+  <svg:path fill="#fff" stroke="#fff" stroke-width="0px" [attr.d]="text_path.d"></path>
+<svg>
